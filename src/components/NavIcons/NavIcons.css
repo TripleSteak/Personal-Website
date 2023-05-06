@@ -1,0 +1,17 @@
+.light-icon {
+    fill: #FFFFFF;
+    cursor: pointer;
+}
+
+.light-icon:hover {
+    fill: #CCCCCC;
+}
+
+.dark-icon {
+    fill: #000000;
+    cursor: pointer;
+}
+
+.dark-icon:hover {
+    fill: #444444;
+}

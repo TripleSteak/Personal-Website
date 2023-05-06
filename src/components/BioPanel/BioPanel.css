@@ -1,0 +1,124 @@
+#all-rights-reserved {
+    font-size: 1.5vh;
+    font-size: calc(var(--vh, 1vh) * 1.5);
+    font-family: 'Klee One', 'Trebuchet MS', sans-serif;
+    color: #999999;
+    text-align: center;
+}
+
+#bio-close-icon {
+    position: absolute;
+    top: 3vh;
+    top: calc(var(--vh, 1vh) * 3);
+    right: 3vh;
+    right: calc(var(--vh, 1vh) * 3);
+    width: 4vh;
+    width: calc(var(--vh, 1vh) * 4);
+    z-index: 100;
+}
+
+#bio-panel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.plain-link {
+    color: #222222;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+#portrait-image {
+    width: 100%;
+}
+
+#start-heading {
+    font-family: 'Braah One', sans-serif;
+    font-weight: 400;
+    font-size: 4vh;
+    font-size: calc(var(--vh, 1vh) * 4);
+    color: #292929;
+    margin-bottom: -2vh;
+    margin-bottom: calc(var(--vh, 1vh) * -2);
+    text-align: center;
+}
+
+.text {
+    font-family: 'Klee One', sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
+    font-size: calc(var(--vh, 1vh) * 2);
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: 600;
+    color: #222222;
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 12vh;
+}
+
+@media only screen and (min-aspect-ratio: 1/1) {
+    #all-rights-reserved {
+        text-align: left;
+    }
+
+    #bio-panel-container {
+        flex-direction: row;
+    }
+
+    #portrait-image {
+        width: 50vh;
+        width: calc(var(--vh, 1vh) * 50);
+        margin-top: 6vh;
+        margin-top: calc(var(--vh, 1vh) * 6);
+    }
+
+    #start-heading {
+        font-size: 7vh;
+        font-size: calc(var(--vh, 1vh) * 7);
+        text-align: left;
+    }
+
+    .text {
+        font-size: 2.7vh;
+        font-size: calc(var(--vh, 1vh) * 2.7);
+        text-align: left;
+    }
+
+    #text-container {
+        padding-top: 3vh;
+        padding-top: calc(var(--vh, 1vh) * 3);
+        padidng-left: 3vh;
+        padding-left: calc(var(--vh, 1vh) * 3);
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (min-aspect-ratio: 3/2) {
+    #all-rights-reserved {
+        text-align: left;
+    }
+
+    #portrait-image {
+        width: 60vh;
+        width: calc(var(--vh, 1vh) * 60);
+    }
+
+    #start-heading {
+        text-align: left;
+    }
+
+    .text {
+        font-size: 2.5vh;
+        font-size: calc(var(--vh, 1vh) * 2.5);
+        text-align: left;
+    }
+}

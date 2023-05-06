@@ -1,0 +1,132 @@
+#next-button {
+    width: 21%;
+    left: 75%;
+    top: 45vw;
+    position: fixed;
+    animation: appear 1.2s ease 1;
+}
+
+#speech-bubble {
+    background-image: url('/public/speechbubble/speech-bubble-top-handle.svg'), url("/public/speechbubble/speech-bubble-base.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+#welcome-msg {
+    position: static;
+    text-align: center;
+    font-family: 'Galindo', 'Trebuchet MS', sans-serif;
+    font-size: 4.7vw;
+    font-weight: 500;
+    animation: appear 1.2s ease 1;
+    margin-top: 35%;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0
+    }
+    99% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@media only screen and (min-aspect-ratio: 2/3) {
+    #next-button {
+        top: 31vw;
+        width: 23%;
+    }
+
+    #speech-bubble {
+        background-image: url("/public/speechbubble/speech-bubble-top-handle.svg"), url("/public/speechbubble/speech-bubble-base.svg");
+        width: 70%;
+        left: 50%;
+        top: 100%;
+    }
+
+    #welcome-msg {
+        font-size: 3.3vw;
+    }
+}
+
+@media only screen and (min-aspect-ratio: 1/1) {
+    #next-button {
+        top: 56%;
+        left: calc(50% + 15vh);
+        left: calc(50% + var(--vh, 1vh) * 15);
+        width: 13vh;
+        width: calc(var(--vh, 1vh) * 13);
+    }
+
+    #speech-bubble {
+        background-image: url("/public/speechbubble/speech-bubble-top-handle.svg"), url("/public/speechbubble/speech-bubble-base.svg");
+        height: 50%;
+        left: 50%;
+        top: 80%;
+    }
+
+    #welcome-msg {
+        font-size: 2.8vh;
+        font-size: calc(var(--vh, 1vh) * 2.8);
+        margin-top: 23vh;
+        margin-top: calc(var(--vh, 1vh) * 23);
+    }
+}
+
+@media only screen and (min-aspect-ratio: 3/2) {
+    #next-button {
+        top: 56%;
+        left: calc(50% + 12vh);
+        left: calc(50% + var(--vh, 1vh) * 12);
+        width: 9vh;
+        width: calc(var(--vh, 1vh) * 9);
+    }
+
+    #speech-bubble {
+        background-image: url("/public/speechbubble/speech-bubble-top-handle.svg"), url("/public/speechbubble/speech-bubble-base.svg");
+        height: 35%;
+        left: 50%;
+        top: 85%;
+    }
+
+    #welcome-msg {
+        font-size: 2.1vh;
+        font-size: calc(var(--vh, 1vh) * 2.1);
+        margin-top: 16vh;
+        margin-top: calc(var(--vh, 1vh) * 16);
+    }
+}
+
+@media only screen and (min-aspect-ratio: 21/9) {
+    #next-button {
+        top: 56%;
+        left: calc(50% + 20vh);
+        left: calc(50% + var(--vh, 1vh) * 20);
+        width: 14vh;
+        width: calc(var(--vh, 1vh) * 14);
+    }
+
+    #speech-bubble {
+        background-image: url("/public/speechbubble/speech-bubble-bottom-handle.svg"), url("/public/speechbubble/speech-bubble-base.svg");
+        height: 60%;
+        left: 50%;
+        top: 30%;
+    }
+
+    #welcome-msg {
+        font-size: 3.6vh;
+        font-size: calc(var(--vh, 1vh) * 3.6);
+        margin-top: 26vh;
+        margin-top: calc(var(--vh, 1vh) * 26);
+    }
+}
