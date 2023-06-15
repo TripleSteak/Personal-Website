@@ -8,6 +8,6 @@ export type BannerProps = {
     children: React.ReactNode;
 };
 
-export type BottomLeftBannerTextProps = {
+export type FavouriteColourTextProps = {
     language: Language;
 }

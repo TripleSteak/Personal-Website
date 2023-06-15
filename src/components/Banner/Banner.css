@@ -1,4 +1,4 @@
-#banner-bottom-left-text {
+#favourite-colour-text {
     position: absolute;
     left: 15px;
     bottom: -5px;
@@ -21,7 +21,7 @@
 }
 
 @media only screen and (min-aspect-ratio: 2/3) {
-    #banner-bottom-left-text {
+    #favourite-colour-text {
         bottom: -6px;
         font-size: 1.8vh;
     }
