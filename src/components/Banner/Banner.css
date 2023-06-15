@@ -1,0 +1,28 @@
+#banner-bottom-left-text {
+    position: absolute;
+    left: 15px;
+    bottom: -5px;
+    font-size: max(3vw, 12px);
+    font-weight: 400;
+    font-family: 'Tilt Neon', 'Trebuchet MS', sans-serif;
+    animation: fade-in 4s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-aspect-ratio: 2/3) {
+    #banner-bottom-left-text {
+        bottom: -6px;
+        font-size: 1.8vh;
+    }
+}

@@ -69,7 +69,7 @@ const App = () => {
 
     return (
         <>
-            <Banner timeOfDay={timeOfDay}>
+            <Banner timeOfDay={timeOfDay} language={language}>
                 <Clock timeOfDay={timeOfDay}/>
                 <Panda timeOfDay={timeOfDay}/>
                 <SpeechBubble timeOfDay={timeOfDay} language={language} messageNumber={welcomeMessageNumber}

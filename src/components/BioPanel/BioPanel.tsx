@@ -5,7 +5,7 @@ import {BioPanelProps, BioTextProps} from "./types";
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import CloseIcon from "../NavIcons/CloseIcon";
-import {bioHeading, EnglishText, FrenchText} from "./constants";
+import {bioHeading, EnglishBioPanelText, FrenchBioPanelText} from "./constants";
 import {Language} from "../LanguageSelect/types";
 
 /**
@@ -15,9 +15,9 @@ import {Language} from "../LanguageSelect/types";
 const BioText = (props: BioTextProps) => {
     switch (props.language) {
         case Language.English:
-            return <EnglishText/>;
+            return <EnglishBioPanelText/>;
         case Language.French:
-            return <FrenchText/>;
+            return <FrenchBioPanelText/>;
     }
     return null;
 };

@@ -23,7 +23,7 @@
     position: static;
     text-align: center;
     font-family: 'Galindo', 'Trebuchet MS', sans-serif;
-    font-size: 4.7vw;
+    font-size: 4.4vw;
     font-weight: 500;
     animation: appear 1.2s ease 1;
     margin-top: 35%;
@@ -55,7 +55,7 @@
     }
 
     #welcome-msg {
-        font-size: 3.3vw;
+        font-size: 3.2vw;
     }
 }
 
@@ -78,8 +78,8 @@
     #welcome-msg {
         font-size: 2.8vh;
         font-size: calc(var(--vh, 1vh) * 2.8);
-        margin-top: 23vh;
-        margin-top: calc(var(--vh, 1vh) * 23);
+        margin-top: 22vh;
+        margin-top: calc(var(--vh, 1vh) * 22);
     }
 }
 
@@ -100,8 +100,8 @@
     }
 
     #welcome-msg {
-        font-size: 2.1vh;
-        font-size: calc(var(--vh, 1vh) * 2.1);
+        font-size: 2vh;
+        font-size: calc(var(--vh, 1vh) * 2);
         margin-top: 16vh;
         margin-top: calc(var(--vh, 1vh) * 16);
     }
@@ -124,9 +124,9 @@
     }
 
     #welcome-msg {
-        font-size: 3.6vh;
-        font-size: calc(var(--vh, 1vh) * 3.6);
-        margin-top: 26vh;
-        margin-top: calc(var(--vh, 1vh) * 26);
+        font-size: 3.4vh;
+        font-size: calc(var(--vh, 1vh) * 3.4);
+        margin-top: 27vh;
+        margin-top: calc(var(--vh, 1vh) * 27);
     }
 }

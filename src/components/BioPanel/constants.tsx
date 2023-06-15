@@ -5,7 +5,7 @@ export const bioHeading = {
     french: 'Enhardi',
 };
 
-export const EnglishText = () => {
+export const EnglishBioPanelText = () => {
     return (
         <p className="text">
             by a fiery optimism, I'm always looking to expand my horizons and to craft something new. The unyielding
@@ -24,7 +24,7 @@ export const EnglishText = () => {
     )
 };
 
-export const FrenchText = () => {
+export const FrenchBioPanelText = () => {
     return (
         <p className="text">
             par un optimisme explosif, je cherche toujours l'opportunité d'agrandir mes horizons et de confectionner
