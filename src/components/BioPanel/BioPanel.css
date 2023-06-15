@@ -76,21 +76,23 @@
     }
 
     #portrait-image {
-        width: 50vh;
-        width: calc(var(--vh, 1vh) * 50);
+        width: 40vh;
+        width: calc(var(--vh, 1vh) * 40);
         margin-top: 6vh;
         margin-top: calc(var(--vh, 1vh) * 6);
     }
 
     #start-heading {
-        font-size: 7vh;
-        font-size: calc(var(--vh, 1vh) * 7);
+        font-size: 6.5vh;
+        font-size: calc(var(--vh, 1vh) * 6.5);
         text-align: left;
     }
 
     .text {
-        font-size: 2.7vh;
-        font-size: calc(var(--vh, 1vh) * 2.7);
+        font-size: 2.3vh;
+        font-size: calc(var(--vh, 1vh) * 2.3);
+        margin-right: 5vh;
+        margin-right: calc(var(--vh, 1vh) * 5);
         text-align: left;
     }
 
@@ -120,6 +122,8 @@
     .text {
         font-size: 2.5vh;
         font-size: calc(var(--vh, 1vh) * 2.5);
+        margin-right: 7vh;
+        margin-right: calc(var(--vh, 1vh) * 7);
         text-align: left;
     }
 }
