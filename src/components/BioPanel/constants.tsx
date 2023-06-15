@@ -36,9 +36,9 @@ export const FrenchBioPanelText = () => {
             de bricoler les logiciels, et j'ai de l'expérience avec les applications serverless, le développement Web,
             les résaux de sockets, l'architecture du cloud, et la conception des jeux.<br/><br/>
 
-            Il faut que vous n'oubliiez jamais ça: j'adore ma famille, j'adore mes amis, et j'adore apprendre!
+            Il faut que vous n'oubliiez jamais ça: j'aime ma famille, j'aime mes amis, et j'adore apprendre!
             Devenez mon ami, <a className="plain-link" href="mailto:simono768@gmail.com">enseignez-moi</a>, et je
-            resterai à vos côtés et ferai tout ce que je pourrai pour transformer nos rêves effrénés en réalité!
+            resterai à vos côtés et ferai tout ce que je pourrai pour transformer nos rêves fous en réalité!
         </p>
     )
 };

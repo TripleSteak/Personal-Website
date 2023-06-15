@@ -30,7 +30,8 @@
 }
 
 #portrait-image {
-    width: 100%;
+    margin: 0 auto;
+    width: min(100%, 512px);
 }
 
 #start-heading {
