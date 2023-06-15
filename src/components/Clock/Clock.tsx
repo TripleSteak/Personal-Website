@@ -9,7 +9,7 @@ import {hourHandStyle, minuteHandStyle, secondHandStyle} from "./styles";
 const getClockAngles = (now: Date) => {
     const secondAngle = now.getSeconds() * 6;
     const minuteAngle = now.getMinutes() * 6 + secondAngle / 60;
-    const hourAngle = now.getHours() * 30 + minuteAngle / 60;
+    const hourAngle = now.getHours() * 30 + minuteAngle / 12;
 
     return {
         secondAngle,
