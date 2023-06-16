@@ -4,7 +4,7 @@ import {Language} from "../LanguageSelect/types";
 export type NavBarProps = {
     timeOfDay: TimeOfDay;
     language: Language;
-    onRequestClose: () => void; /* Temporarily used to override click on nav bar (but not on a link) */
+    onRequestClose: () => void; /* Closes the BioPanel upon click */
 };
 
 export type NavLinkProps = {

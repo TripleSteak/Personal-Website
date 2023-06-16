@@ -1,4 +1,4 @@
-#all-rights-reserved {
+#all-rights-reserved-bio-panel {
     font-size: 1.5vh;
     font-size: calc(var(--vh, 1vh) * 1.5);
     font-family: 'Klee One', 'Trebuchet MS', sans-serif;
@@ -36,7 +36,7 @@
 
 #start-heading {
     font-family: 'Braah One', sans-serif;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 4vh;
     font-size: calc(var(--vh, 1vh) * 4);
     color: #292929;
@@ -48,13 +48,13 @@
 .text {
     font-family: 'Klee One', sans-serif;
     font-weight: 400;
-    font-size: 2vh;
-    font-size: calc(var(--vh, 1vh) * 2);
+    font-size: 2.25vh;
+    font-size: calc(var(--vh, 1vh) * 2.25);
     text-align: center;
 }
 
 .text-bold {
-    font-weight: 600;
+    font-weight: bold;
     color: #222222;
 }
 
@@ -66,8 +66,25 @@
     padding-bottom: 12vh;
 }
 
+#view-my-projects {
+    font-family: 'Braah One', sans-serif;
+    font-size: 3vh;
+    color: #AAAAAA;
+    margin: 1vh 0;
+}
+
+#view-my-projects:hover {
+    color: #777777;
+    cursor: pointer;
+}
+
+#view-my-projects-container {
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (min-aspect-ratio: 1/1) {
-    #all-rights-reserved {
+    #all-rights-reserved-bio-panel {
         text-align: left;
     }
 
@@ -76,8 +93,8 @@
     }
 
     #portrait-image {
-        width: 40vh;
-        width: calc(var(--vh, 1vh) * 40);
+        width: min(40vh, 512px);
+        width: min(calc(var(--vh, 1vh) * 40), 512px);
         margin-top: 6vh;
         margin-top: calc(var(--vh, 1vh) * 6);
     }
@@ -103,16 +120,20 @@
         padding-left: calc(var(--vh, 1vh) * 3);
         padding-bottom: 0;
     }
+
+    #view-my-projects-container {
+        justify-content: start;
+    }
 }
 
 @media only screen and (min-aspect-ratio: 3/2) {
-    #all-rights-reserved {
+    #all-rights-reserved-bio-panel {
         text-align: left;
     }
 
     #portrait-image {
-        width: 60vh;
-        width: calc(var(--vh, 1vh) * 60);
+        width: min(60vh, 512px);
+        width: min(calc(var(--vh, 1vh) * 60), 512px);
     }
 
     #start-heading {

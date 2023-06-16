@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 3.1vh;
-    z-index: 100; /* z-index is needed for links to render on top of the background darkening from bio panel */
+    z-index: 100; /* Needed for links to render on top of the background darkening from bio panel */
 }
 
 @media only screen and (max-aspect-ratio: 1/1) {

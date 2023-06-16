@@ -1,11 +1,11 @@
 import React from 'react';
 import './BioPanel.css';
 import '../NavBar/NavBar.css';
-import {BioPanelProps, BioTextProps} from "./types";
+import {BioPanelProps, BioTextProps, ViewMyProjectsProps} from "./types";
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import CloseIcon from "../NavIcons/CloseIcon";
-import {bioHeading, EnglishBioPanelText, FrenchBioPanelText} from "./constants";
+import {bioHeading, EnglishBioPanelText, FrenchBioPanelText, viewMyProjectsText} from "./constants";
 import {Language} from "../LanguageSelect/types";
 
 /**
@@ -21,6 +21,13 @@ const BioText = (props: BioTextProps) => {
     }
     return null;
 };
+
+const ViewMyProjects = (props: ViewMyProjectsProps) => {
+    return <div id="view-my-projects-container">
+        <p id="view-my-projects"
+           onClick={props.onViewMyProjectsClicked}>{viewMyProjectsText[props.language].toUpperCase()}</p>
+    </div>
+}
 
 /**
  * @description Pop-up panel that appears when the SpeechBubble's NextButton is clicked.
@@ -45,7 +52,12 @@ const BioPanel = (props: BioPanelProps) => {
                     <div id="text-container">
                         <h1 id="start-heading">{bioHeading[props.language]}</h1>
                         <BioText language={props.language}/>
-                        <p id="all-rights-reserved">{`Copyright © 2021-${new Date().getFullYear()} Simon Ou. All Rights Reserved.`}</p>
+                        <ViewMyProjects language={props.language}
+                                        onViewMyProjectsClicked={() => {
+                                            props.onRequestClose();
+                                            props.onViewMyProjectsClicked();
+                                        }}/>
+                        <p id="all-rights-reserved-bio-panel">{`Copyright © 2021-${new Date().getFullYear()} Simon Ou. All Rights Reserved.`}</p>
                     </div>
                 </div>
             </SlidingPane>

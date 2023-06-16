@@ -11,6 +11,7 @@ import {getNextLanguage} from "./utils/LanguageUtils";
 import BioPanel from "./components/BioPanel/BioPanel";
 import NavBar from "./components/NavBar/NavBar";
 import Hamburger from "./components/Hamburger/Hamburger";
+import ProjectPage from "./components/ProjectPage/ProjectPage";
 
 const welcomeMessageNumber = Math.floor(Math.random() * 3) as 0 | 1 | 2;
 
@@ -54,6 +55,7 @@ const setFavicon = (timeOfDay: TimeOfDay) => {
 const App = () => {
     const [language, setLanguage] = useState(Language.English);
     const [isBioPanelOpen, setIsBioPanelOpen] = useState(false);
+    const [isProjectPageOpen, setIsProjectPageOpen] = useState(false);
 
     // Find the time of day, update the favicon
     const timeOfDay = getTimeOfDay();
@@ -78,11 +80,15 @@ const App = () => {
                                 nextLanguage={() => setLanguage(getNextLanguage(language))}/>
             </Banner>
 
-            <BioPanel language={language} isOpen={isBioPanelOpen} onRequestClose={() => setIsBioPanelOpen(false)}/>
+            <BioPanel language={language} isOpen={isBioPanelOpen} onRequestClose={() => setIsBioPanelOpen(false)}
+                      onViewMyProjectsClicked={() => setIsProjectPageOpen(true)}/>
             {isBioPanelOpen && (<>
                 <NavBar timeOfDay={timeOfDay} language={language} onRequestClose={() => setIsBioPanelOpen(false)}/>
                 <Hamburger timeOfDay={timeOfDay} language={language}/>
             </>)}
+
+            <ProjectPage language={language} isOpen={isProjectPageOpen}
+                         onRequestClose={() => setIsProjectPageOpen(false)}/>
         </>
     );
 };

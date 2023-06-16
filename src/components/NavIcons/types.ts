@@ -1,5 +1,5 @@
 export type IconProps = {
-    id: string;
-    className: string;
-    onClick: () => void;
+    id?: string;
+    className?: string;
+    onClick?: () => void;
 };
