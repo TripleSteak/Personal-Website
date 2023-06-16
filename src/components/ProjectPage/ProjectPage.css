@@ -54,10 +54,16 @@
 }
 
 #project-text-container {
-    padding: 3vw 0;
+    padding: 3vw 0 12vw;
     display: flex;
     flex-direction: column;
     gap: 5vw;
+}
+
+@media only screen and (min-aspect-ratio: 1/1) {
+    #project-text-container {
+        padding: 3vw 0 0;
+    }
 }
 
 @media only screen and (min-aspect-ratio: 3/2) {
@@ -83,6 +89,6 @@
     }
 
     #project-text-container {
-        padding: 3vw 2vw;
+        padding: 3vw 2vw 0;
     }
 }
