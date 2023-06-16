@@ -3,16 +3,16 @@ export const RESUME_URL = '/resume.pdf';
 export const LINKED_IN_URL = 'https://www.linkedin.com/in/simon-ou/';
 
 export const navLinkStrings = {
-    'email': {
-        'english': "EMAIL",
-        'french': "COURRIEL",
+    email: {
+        english: "EMAIL",
+        french: "COURRIEL",
     },
-    'resume': {
-        'english': "RESUMÉ",
-        'french': "CV",
+    resume: {
+        english: "RESUMÉ",
+        french: "CV",
     },
-    'linkedin': {
-        'english': "LINKEDIN",
-        'french': "LINKEDIN",
+    linkedin: {
+        english: "LINKEDIN",
+        french: "LINKEDIN",
     },
 };

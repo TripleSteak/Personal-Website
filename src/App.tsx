@@ -82,13 +82,13 @@ const App = () => {
 
             <BioPanel language={language} isOpen={isBioPanelOpen} onRequestClose={() => setIsBioPanelOpen(false)}
                       onViewMyProjectsClicked={() => setIsProjectPageOpen(true)}/>
-            {isBioPanelOpen && (<>
+            <ProjectPage language={language} isOpen={isProjectPageOpen}
+                         onRequestClose={() => setIsProjectPageOpen(false)}/>
+
+            {(isBioPanelOpen || isProjectPageOpen) && (<>
                 <NavBar timeOfDay={timeOfDay} language={language} onRequestClose={() => setIsBioPanelOpen(false)}/>
                 <Hamburger timeOfDay={timeOfDay} language={language}/>
             </>)}
-
-            <ProjectPage language={language} isOpen={isProjectPageOpen}
-                         onRequestClose={() => setIsProjectPageOpen(false)}/>
         </>
     );
 };

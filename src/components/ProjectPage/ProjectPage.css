@@ -41,9 +41,15 @@
 
 .project-text {
     font-family: 'Klee One', sans-serif;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 2.25vh;
     font-size: calc(var(--vh, 1vh) * 2.25);
+    text-align: center;
+}
+
+.project-when {
+    font-size: 1.5vh;
+    font-family: 'Klee One', sans-serif;
     text-align: center;
 }
 
@@ -69,6 +75,10 @@
     }
 
     .project-text {
+        text-align: left;
+    }
+
+    .project-when {
         text-align: left;
     }
 

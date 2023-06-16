@@ -11,14 +11,18 @@ export const upcomingBattleRoyale = {
             'combat system, a set of collision detection algorithms, and a server configuration system. ' +
             'Furthermore, I hand-crafted 3D models, 2D sprites, skeletal animations, and some visual effects... ' +
             'Stay tuned for updates! :D',
-        french: 'Un battle royale d’action multijoueur inédit et passionnant, construit en 3D, dans lequel les ' +
+        french: 'Un battle royale d’action multijoueur inédit, construit en 3D, dans lequel les ' +
             'joueurs se battent pour devenir le champion ultime! Les clients de Unity se connectent à un serveur ' +
             'de socket UDP centralisé, établi avec du cryptage AES de bout en bout et un système de paquets bien ' +
             'encapsulés. J’ai aussi développé un système de mouvements (avec de la prédiction côté client et de ' +
             'la réconciliation côté serveur), un système de combat imposé par le serveur, une collection ' +
-            'd’algorithmes pour détecter les collisions, et un système de configurations pour le serveur. En plus, ' +
+            'd’algorithmes pour détecter les collisions, et un système de configuration pour le serveur. En plus, ' +
             'j’ai bricolé des modèles 3D, des Sprites 2D, des animations squelettiques, et des effets visuels... ' +
             'des nouvelles à venir!'
+    },
+    when: {
+        english: 'Oct 2022 –',
+        french: 'Oct 2022 –',
     }
 };
 
@@ -39,8 +43,33 @@ export const automatedVoiceControlledChessboard = {
             'speech-to-text a été liée aux parties mécaniques avec un Arduino. J’ai codé un algorithme avec état ' +
             'qui déterminerait si les commandes vocales des joueurs constituaient des mouvements légaux selon ' +
             'les règles de l’échecs classique.',
+    },
+    when: {
+        english: 'Oct 2021 – Nov 2021',
+        french: 'Oct 2021 – Nov 2021',
     }
 };
+
+export const finalAisle = {
+    title: {
+        english: 'Final Aisle',
+        french: 'Final Aisle',
+    },
+    content: {
+        english: 'I set out the groundwork for a multiplayer role-playing game that would take place in a ' +
+            'predominantly food-themed world, where players controlled a cute rabbit character. Gameplay took place ' +
+            'on a Unity client connected to a TCP socket server. I experimented with both a 2D and 3D style, but ' +
+            'never got around to populating the world with gameplay content. :(',
+        french: 'J’ai établi la fondation d’un jeu de rôle multijoueur qui aurait lieu dans un monde avec un thème ' +
+            'principalement d’aliments, où les joueurs contrôlaient un lapin mignon. L’expérience du jeu se passait ' +
+            'dans un client de Unity, connecté à un serveur de socket TCP. J’avais essayé d’employer un style 2D et ' +
+            '3D, mais je ne suis jamais arrivé à remplir le monde avec plus de contenu. :(',
+    },
+    when: {
+        english: 'Sep 2020 – Jun 2021',
+        french: 'Sept 2020 – Juin 2021',
+    }
+}
 
 export const yrdsbStudentPlannerApp = {
     title: {
@@ -57,9 +86,13 @@ export const yrdsbStudentPlannerApp = {
         french: 'J’ai conçu et construit un appli pour Android qui fournissait aux élèves secondaires dans la Région ' +
             'de York, en Ontario, les capabilités d’obtenir les annonces et les renseignements des événements de ' +
             'l’école directement aux portables. L’appli possédait aussi un calendrier pour que les élèves puissent ' +
-            'prévoir leurs dates limite! Un système de vérification par e-mail a été établi pour authentifier des ' +
+            'prévoir leurs dates limite! Un système de vérification par e-mail a été établi pour authentifier les ' +
             'élèves sans mot de passe. Malheureusement, lorsque le COVID est arrivé, l’intention de publier l’appli ' +
             'avec la commission scolaire a été annulée.',
+    },
+    when: {
+        english: 'Mar 2019 – Mar 2020',
+        french: 'Mars 2019 – Mars 2020',
     }
 };
 
@@ -76,9 +109,33 @@ export const idealGasLawsSimulation = {
         french: 'Une simulation des particules de gaz parfait qui se déplacent dans un espace 3D a été construite, ' +
             'et ses observations quantifiables ont été comparées avec les équations cinématiques classiques pour ' +
             'vérifier leur relations avec les lois des gaz parfaits. Il était possible de changer les paramètres ' +
-            'experimentux, tel que la température et le volume de la cuve, en temps réel!',
+            'experimentaux, tel que la température et le volume de la cuve, en temps réel!',
+    },
+    when: {
+        english: 'Nov 2019 – Dec 2019',
+        french: 'Nov 2019 – Déc 2019',
     }
 };
+
+export const popularBoardGames = {
+    title: {
+        english: 'Popular Board Games',
+        french: 'Jeux de Société Populaires',
+    },
+    content: {
+        english: 'Virtual versions of the well-known board games Code Breakers and Boggle, built using a Java ' +
+            'graphic user interface! I wrote various parts of the games\' code, including the Boggle algorithm for ' +
+            'searching the board to determine whether a played word was legal.',
+        french: 'Des versions virtuelles des jeux de société bien connus, Code Breakers et Boggle, construites avec ' +
+            'une interface utilisateur graphique en Java! J\'ai écrit plusieurs parties du code des jeux, y compris ' +
+            'l\'algorithme de Boggle qui examinait l\'échiquier pour déterminer si un mot entré par un joueur était ' +
+            'permis selon les règles du jeu.',
+    },
+    when: {
+        english: 'Mar 2019 – Jun 2019',
+        french: 'Mars 2019 – Juin 2019',
+    }
+}
 
 export const minecraftPlugins = {
     title: {
@@ -87,11 +144,17 @@ export const minecraftPlugins = {
     },
     content: {
         english: 'A great chunk of the second half of my childhood was spent on building random stuff in Minecraft ' +
-            'using available object-oriented plugin APIs. I made a character selector, giant bisons, customizable ' +
-            'hot dogs, a working elevator, functioning traffic lights...',
+            'using available object-oriented plugin APIs. I made an MMO-style character selector, giant bisons that ' +
+            'followed a custom combat system, customizable hot dogs that granted special effects on consumption, a ' +
+            'smooth, functioning 20-storey elevator, and working traffic lights...',
         french: 'Une grande partie de la deuxième moitié de mon enfance a été passée en construisant des trucs ' +
             'aléatoires en Minecraft, en utilisant les APIs orientés objet disponibles pour ses plugins. J’ai créé ' +
-            'un sélecteur de personnages, de grands bisons, des hot-dogs personnalisables, un ascenseur ' +
-            'opérationnel, et des feux de circulation...',
+            'un sélecteur de personnages de style MMO, de grands bisons qui suivaient un système de combat sur ' +
+            'mesure, des hot-dogs personnalisables qui offraient des effets spéciaux sur consommation, un ascenseur ' +
+            'de 20 étages opérationnel, et des feux de circulation...',
+    },
+    when: {
+        english: 'Sep 2014 – Oct 2021',
+        french: 'Sept 2014 – Oct 2021',
     }
 };

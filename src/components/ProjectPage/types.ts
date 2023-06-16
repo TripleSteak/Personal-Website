@@ -8,6 +8,7 @@ export type ProjectPageProps = {
 
 export type ProjectEntryProps = {
     title: string;
+    when: string;
     content: string;
     imgSrc: string;
 }
