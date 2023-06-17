@@ -64,13 +64,16 @@
     padding-top: 0;
     padding-left: 0;
     padding-bottom: 12vh;
+    padding-bottom: calc(var(--vh, 1vh) * 12);
 }
 
 #view-my-projects {
     font-family: 'Braah One', sans-serif;
     font-size: 3vh;
+    font-size: calc(var(--vh, 1vh) * 3);
     color: #AAAAAA;
     margin: 1vh 0;
+    margin: calc(var(--vh, 1vh) * 1) 0;
 }
 
 #view-my-projects:hover {

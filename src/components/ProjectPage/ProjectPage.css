@@ -49,6 +49,7 @@
 
 .project-when {
     font-size: 1.5vh;
+    font-size: calc(var(--vh, 1vh) * 1.5);
     font-family: 'Klee One', sans-serif;
     text-align: center;
 }
@@ -70,6 +71,7 @@
     .project-entry {
         flex-direction: row;
         gap: 5vh;
+        gap: calc(var(--vh, 1vh) * 5);
     }
 
     .project-header {
@@ -78,6 +80,7 @@
 
     .project-image {
         width: min(40vh, 420px);
+        width: min(calc(var(--vh, 1vh) * 40), 420px);
     }
 
     .project-text {
