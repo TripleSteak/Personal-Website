@@ -5,4 +5,4 @@ Welcome to my personal website! This is a simple front-end browser application b
 
 The live website has been deployed [here](https://www.simonou.com) using Firebase. As with any small-scale React app, use `npm run build` and `npm start` to develop, build, and test changes!
 
-![image](https://github.com/TripleSteak/Personal-Website/assets/24597462/d6218bcd-4bfc-4764-80aa-4f2066f51ccc)
+![Untitled-1](https://github.com/TripleSteak/Personal-Website/assets/24597462/5bfb38e7-dc8b-4fbf-afe9-b5f009d3b2da)
