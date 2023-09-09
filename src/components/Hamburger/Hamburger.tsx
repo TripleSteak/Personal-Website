@@ -6,7 +6,7 @@ import CloseIcon from "../NavIcons/CloseIcon";
 import {NavLinkProps} from "../NavBar/types";
 import {hamburgerLink} from "./styles";
 import {HamburgerProps} from "./types";
-import {EMAIL_URL, LINKED_IN_URL, navLinkStrings, RESUME_URL} from "../NavBar/constants";
+import {EMAIL_URL, GITHUB_URL, LINKED_IN_URL, navLinkStrings, RESUME_URL} from "../NavBar/constants";
 
 const HamburgerLink = (props: NavLinkProps) => {
     const [isHovering, setIsHovering] = useState(false);
@@ -35,6 +35,8 @@ const Hamburger = (props: HamburgerProps) => {
             <div id="hamburger-link-container">
                 <HamburgerLink timeOfDay={props.timeOfDay} link={EMAIL_URL}
                                text={navLinkStrings.email[props.language]}/>
+                <HamburgerLink timeOfDay={props.timeOfDay} link={GITHUB_URL}
+                               text={navLinkStrings.github[props.language]}/>
                 <HamburgerLink timeOfDay={props.timeOfDay} link={RESUME_URL}
                                text={navLinkStrings.resume[props.language]}/>
                 <HamburgerLink timeOfDay={props.timeOfDay} link={LINKED_IN_URL}

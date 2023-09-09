@@ -86,7 +86,10 @@ const App = () => {
                          onRequestClose={() => setIsProjectPageOpen(false)}/>
 
             {(isBioPanelOpen || isProjectPageOpen) && (<>
-                <NavBar timeOfDay={timeOfDay} language={language} onRequestClose={() => setIsBioPanelOpen(false)}/>
+                <NavBar timeOfDay={timeOfDay} language={language} onRequestClose={() => {
+                    setIsBioPanelOpen(false);
+                    setIsProjectPageOpen(false);
+                }}/>
                 <Hamburger timeOfDay={timeOfDay} language={language}/>
             </>)}
         </>
