@@ -1,6 +1,4 @@
-import {TimeOfDay} from "../../utils/TimeUtils";
-
-export const hamburgerLink = (timeOfDay: TimeOfDay, isHovering: boolean) => ({
+export const hamburgerLink = (isHovering: boolean) => ({
     fontFamily: 'Klee One',
     fontSize: '3vh',
     fontWeight: '600',

@@ -12,7 +12,7 @@ const HamburgerLink = (props: NavLinkProps) => {
     const [isHovering, setIsHovering] = useState(false);
 
     return (
-        <a style={hamburgerLink(props.timeOfDay, isHovering)} className="nav-link"
+        <a style={hamburgerLink(isHovering)} className="nav-link"
            href={props.link}
            onMouseEnter={() => setIsHovering(true)}
            onMouseLeave={() => setIsHovering(false)}>
@@ -33,14 +33,10 @@ const Hamburger = (props: HamburgerProps) => {
             hideHeader={true}
         >
             <div id="hamburger-link-container">
-                <HamburgerLink timeOfDay={props.timeOfDay} link={EMAIL_URL}
-                               text={navLinkStrings.email[props.language]}/>
-                <HamburgerLink timeOfDay={props.timeOfDay} link={GITHUB_URL}
-                               text={navLinkStrings.github[props.language]}/>
-                <HamburgerLink timeOfDay={props.timeOfDay} link={RESUME_URL}
-                               text={navLinkStrings.resume[props.language]}/>
-                <HamburgerLink timeOfDay={props.timeOfDay} link={LINKED_IN_URL}
-                               text={navLinkStrings.linkedin[props.language]}/>
+                <HamburgerLink link={EMAIL_URL} text={navLinkStrings.email[props.language]}/>
+                <HamburgerLink link={GITHUB_URL} text={navLinkStrings.github[props.language]}/>
+                <HamburgerLink link={RESUME_URL} text={navLinkStrings.resume[props.language]}/>
+                <HamburgerLink link={LINKED_IN_URL} text={navLinkStrings.linkedin[props.language]}/>
             </div>
         </SlidingPane>
 

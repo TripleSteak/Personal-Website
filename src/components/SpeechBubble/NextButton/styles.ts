@@ -6,7 +6,6 @@ import {
     nextButtonOutlineColour
 } from "./constants";
 
-
 export const nextButtonBackgroundStyle = (timeOfDay: TimeOfDay) => ({
     fill: nextButtonBackgroundColours[timeOfDay],
 });

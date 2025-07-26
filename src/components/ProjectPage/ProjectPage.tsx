@@ -4,10 +4,9 @@ import "./ProjectPage.css";
 import CloseIcon from "../NavIcons/CloseIcon";
 import SlidingPane from "react-sliding-pane";
 import {
-    automatedVoiceControlledChessboard, finalAisle,
-    idealGasLawsSimulation, minecraftPlugins, popularBoardGames,
-    upcomingBattleRoyale,
-    yrdsbStudentPlannerApp
+    automaticChessboard, battleRoyalePrototype, finalAisle,
+    gasLawsSimulation, minecraftPlugins, popularBoardGames,
+    yrdsbStudentApp
 } from "./constants";
 
 const ProjectEntry = (props: ProjectEntryProps) => {
@@ -40,30 +39,30 @@ const ProjectPage = (props: ProjectPageProps) => {
 
                 <div id='project-text-container'>
 
-                    <ProjectEntry title={upcomingBattleRoyale.title[props.language]}
-                                  content={upcomingBattleRoyale.content[props.language]}
-                                  when={upcomingBattleRoyale.when[props.language]}
-                                  imgSrc={'projects/upcoming-battle-royale.png'}/>
+                    <ProjectEntry title={battleRoyalePrototype.title[props.language]}
+                                  content={battleRoyalePrototype.content[props.language]}
+                                  when={battleRoyalePrototype.when[props.language]}
+                                  imgSrc={'projects/battle-royale-prototype.png'}/>
 
-                    <ProjectEntry title={automatedVoiceControlledChessboard.title[props.language]}
-                                  content={automatedVoiceControlledChessboard.content[props.language]}
-                                  when={automatedVoiceControlledChessboard.when[props.language]}
-                                  imgSrc={'projects/automatic-voice-controlled-chessboard.png'}/>
+                    <ProjectEntry title={automaticChessboard.title[props.language]}
+                                  content={automaticChessboard.content[props.language]}
+                                  when={automaticChessboard.when[props.language]}
+                                  imgSrc={'projects/automatic-chessboard.png'}/>
 
                     <ProjectEntry title={finalAisle.title[props.language]}
                                   content={finalAisle.content[props.language]}
                                   when={finalAisle.when[props.language]}
                                   imgSrc={'projects/final-aisle.png'}/>
 
-                    <ProjectEntry title={yrdsbStudentPlannerApp.title[props.language]}
-                                  content={yrdsbStudentPlannerApp.content[props.language]}
-                                  when={yrdsbStudentPlannerApp.when[props.language]}
+                    <ProjectEntry title={yrdsbStudentApp.title[props.language]}
+                                  content={yrdsbStudentApp.content[props.language]}
+                                  when={yrdsbStudentApp.when[props.language]}
                                   imgSrc={'projects/yrdsb-student-app.png'}/>
 
-                    <ProjectEntry title={idealGasLawsSimulation.title[props.language]}
-                                  content={idealGasLawsSimulation.content[props.language]}
-                                  when={idealGasLawsSimulation.when[props.language]}
-                                  imgSrc={'projects/ideal-gas-laws-simulation.png'}/>
+                    <ProjectEntry title={gasLawsSimulation.title[props.language]}
+                                  content={gasLawsSimulation.content[props.language]}
+                                  when={gasLawsSimulation.when[props.language]}
+                                  imgSrc={'projects/gas-laws-simulation.png'}/>
 
                     <ProjectEntry title={popularBoardGames.title[props.language]}
                                   content={popularBoardGames.content[props.language]}

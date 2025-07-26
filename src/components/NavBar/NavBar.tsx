@@ -10,7 +10,7 @@ const NavLink = (props: NavLinkProps) => {
     const [isHovering, setIsHovering] = useState(false);
 
     return (
-        <a style={navLink(props.timeOfDay, isHovering)} className="nav-link"
+        <a style={navLink(isHovering)} className="nav-link"
            href={props.link}
            onMouseEnter={() => setIsHovering(true)}
            onMouseLeave={() => setIsHovering(false)}>
@@ -25,10 +25,10 @@ const NavLink = (props: NavLinkProps) => {
  */
 const NavBar = (props: NavBarProps) => {
     return <div id="nav-link-container" className="banner-item" onClick={props.onRequestClose}>
-        <NavLink timeOfDay={props.timeOfDay} link={EMAIL_URL} text={navLinkStrings.email[props.language]}/>
-        <NavLink timeOfDay={props.timeOfDay} link={GITHUB_URL} text={navLinkStrings.github[props.language]}/>
-        <NavLink timeOfDay={props.timeOfDay} link={RESUME_URL} text={navLinkStrings.resume[props.language]}/>
-        <NavLink timeOfDay={props.timeOfDay} link={LINKED_IN_URL} text={navLinkStrings.linkedin[props.language]}/>
+        <NavLink link={EMAIL_URL} text={navLinkStrings.email[props.language]}/>
+        <NavLink link={GITHUB_URL} text={navLinkStrings.github[props.language]}/>
+        <NavLink link={RESUME_URL} text={navLinkStrings.resume[props.language]}/>
+        <NavLink link={LINKED_IN_URL} text={navLinkStrings.linkedin[props.language]}/>
     </div>;
 };
 

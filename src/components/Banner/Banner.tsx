@@ -7,7 +7,7 @@ import {favouriteColourText} from "./constants";
 
 /**
  * @description Returns the path of the banner SVG to be displayed on the website.
- * Returned banner will match the given TimeOfDay.
+ * The returned banner will match the given TimeOfDay.
  */
 const getBannerImageUrl = (timeOfDay: TimeOfDay) => {
     switch (timeOfDay) {
@@ -25,8 +25,8 @@ const getBannerImageUrl = (timeOfDay: TimeOfDay) => {
 };
 
 /**
- * @description Text in the bottom left of the banner that suggests the user to return to the site later if they don't like the colour!
- * (This is to let users know that the site changes colours based on time of day...)
+ * @description Text in the bottom left of the banner that suggests that the user return to the site later if they
+ * don't like the colour! This is to let users know that the site changes colours based on time of day...
  */
 const FavouriteColourText = (props: FavouriteColourTextProps) => {
     return (

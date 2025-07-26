@@ -19,13 +19,13 @@ const BioText = (props: BioTextProps) => {
         case Language.French:
             return <FrenchBioPanelText/>;
     }
-    return null;
 };
 
 const ViewMyProjects = (props: ViewMyProjectsProps) => {
     return <div id="view-my-projects-container">
         <p id="view-my-projects"
-           onClick={props.onViewMyProjectsClicked}>{viewMyProjectsText[props.language].toUpperCase()}</p>
+           onClick={props.onViewMyProjectsClicked}>{viewMyProjectsText[props.language].toUpperCase()}
+        </p>
     </div>
 }
 

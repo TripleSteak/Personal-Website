@@ -1,35 +1,33 @@
-export const upcomingBattleRoyale = {
+export const battleRoyalePrototype = {
     title: {
-        english: 'Upcoming Battle Royale',
-        french: 'Battle Royale Inédit',
+        english: 'Battle Royale Prototype',
+        french: 'Prototype Battle Royale',
     },
     content: {
-        english: 'An exciting, upcoming action-packed 3D multiplayer battle royale, where players fight each other ' +
+        english: 'An exciting action-packed 3D multiplayer battle royale, where players fight each other ' +
             'off to become the ultimate champion! Unity clients are connected to a centralized UDP socket server, ' +
             'equipped with end-to-end AES encryption and a highly-encapsulated packet system. I\'ve also developed ' +
             'a movement system (with client-side prediction and server reconciliation), a server-authoritative ' +
             'combat system, a set of collision detection algorithms, and a server configuration system. ' +
-            'Furthermore, I hand-crafted 3D models, 2D sprites, skeletal animations, and some visual effects... ' +
-            'Stay tuned for updates! :D',
-        french: 'Un battle royale d’action multijoueur inédit, construit en 3D, dans lequel les ' +
+            'Furthermore, I hand-crafted 3D models, 2D sprites, skeletal animations, and some visual effects too!',
+        french: 'Un battle royale d’action multijoueur, construit en 3D, dans lequel les ' +
             'joueurs se battent pour devenir le champion ultime! Les clients de Unity se connectent à un serveur ' +
             'de socket UDP centralisé, établi avec du cryptage AES de bout en bout et un système de paquets bien ' +
             'encapsulés. J’ai aussi développé un système de mouvements (avec de la prédiction côté client et de ' +
             'la réconciliation côté serveur), un système de combat imposé par le serveur, une collection ' +
             'd’algorithmes pour détecter les collisions, et un système de configuration pour le serveur. En plus, ' +
-            'j’ai bricolé des modèles 3D, des Sprites 2D, des animations squelettiques, et des effets visuels... ' +
-            'des nouvelles à venir!'
+            'j’ai bricolé des modèles 3D, des Sprites 2D, des animations squelettiques, et des effets visuels aussi!'
     },
     when: {
-        english: 'Oct 2022 –',
-        french: 'Oct 2022 –',
+        english: 'Oct 2022 – Sept 2024',
+        french: 'Oct 2022 – Sept 2024',
     }
 };
 
-export const automatedVoiceControlledChessboard = {
+export const automaticChessboard = {
     title: {
-        english: 'Automated Voice-Controlled Chessboard',
-        french: 'Échiquier Automatique à Commande Vocale'
+        english: 'Automatic Chessboard',
+        french: 'Échiquier Automatique'
     },
     content: {
         english: 'A couple of friends and I joined forces to build Wizard\'s Chess, but without the magic. A set of ' +
@@ -66,12 +64,12 @@ export const finalAisle = {
             '3D, mais je ne suis jamais arrivé à remplir le monde avec plus de contenu. :(',
     },
     when: {
-        english: 'Sep 2020 – Jun 2021',
+        english: 'Sept 2020 – June 2021',
         french: 'Sept 2020 – Juin 2021',
     }
 }
 
-export const yrdsbStudentPlannerApp = {
+export const yrdsbStudentApp = {
     title: {
         english: 'YRDSB Student App',
         french: 'Appli pour les Élèves du YRDSB',
@@ -96,10 +94,10 @@ export const yrdsbStudentPlannerApp = {
     }
 };
 
-export const idealGasLawsSimulation = {
+export const gasLawsSimulation = {
     title: {
-        english: 'Ideal Gas Laws Simulation',
-        french: 'Simulation des Lois des Gaz Parfaits'
+        english: 'Gas Laws Simulation',
+        french: 'Simulation des Lois des Gaz'
     },
     content: {
         english: 'A simulation of ideal gas particles moving in 3D space was constructed, and its quantifiable ' +
@@ -132,7 +130,7 @@ export const popularBoardGames = {
             'permis selon les règles du jeu.',
     },
     when: {
-        english: 'Mar 2019 – Jun 2019',
+        english: 'Mar 2019 – June 2019',
         french: 'Mars 2019 – Juin 2019',
     }
 }
@@ -154,7 +152,7 @@ export const minecraftPlugins = {
             'de 20 étages opérationnel, et des feux de circulation...',
     },
     when: {
-        english: 'Sep 2014 – Oct 2021',
+        english: 'Sept 2014 – Oct 2021',
         french: 'Sept 2014 – Oct 2021',
     }
 };

@@ -29,15 +29,15 @@ const refreshWindowHeight = () => {
 const getFaviconPath = (timeOfDay: TimeOfDay) => {
     switch (timeOfDay) {
         case TimeOfDay.Morning:
-            return '/icons/morning.ico';
+            return '/favicon/favicon-morning.ico';
         case TimeOfDay.Noon:
-            return '/icons/noon.ico';
+            return '/favicon/favicon-noon.ico';
         case TimeOfDay.Afternoon:
-            return '/icons/afternoon.ico';
+            return '/favicon/favicon-afternoon.ico';
         case TimeOfDay.Evening:
-            return '/icons/evening.ico';
+            return '/favicon/favicon-evening.ico';
         case TimeOfDay.Night:
-            return '/icons/night.ico';
+            return '/favicon/favicon-night.ico';
     }
 }
 
@@ -86,11 +86,11 @@ const App = () => {
                          onRequestClose={() => setIsProjectPageOpen(false)}/>
 
             {(isBioPanelOpen || isProjectPageOpen) && (<>
-                <NavBar timeOfDay={timeOfDay} language={language} onRequestClose={() => {
+                <NavBar language={language} onRequestClose={() => {
                     setIsBioPanelOpen(false);
                     setIsProjectPageOpen(false);
                 }}/>
-                <Hamburger timeOfDay={timeOfDay} language={language}/>
+                <Hamburger language={language}/>
             </>)}
         </>
     );

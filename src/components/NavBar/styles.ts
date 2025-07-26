@@ -1,6 +1,4 @@
-import {TimeOfDay} from "../../utils/TimeUtils";
-
-export const navLink = (timeOfDay: TimeOfDay, isHovering: boolean) => ({
+export const navLink = (isHovering: boolean) => ({
     fontFamily: 'Braah One',
     fontSize: '3vh',
     fontWeight: 'normal',

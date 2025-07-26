@@ -22,10 +22,6 @@ const getClockAngles = (now: Date) => {
  * @description The analog alarm clock sitting on the nightstand, whose clock arms reflect the current time.
  */
 const Clock = (props: ClockProps) => {
-    /*
-    See: https://stackoverflow.com/questions/39426083/update-react-component-every-second
-    This useEffect() hook updates time every second, which is used to calculate the clock angles on screen.
-     */
     const [time, setTime] = useState(new Date());
     useEffect(() => {
         const interval = setInterval(() => setTime(new Date()), 1000);

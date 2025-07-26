@@ -4,7 +4,8 @@ import {Language, LanguageSelectProps} from "./types";
 import {langLetterStyle, langTriangleStyle} from "./styles";
 
 /**
- * @description Two letters on the globe in the top-left corner of the website, which can be clicked to change the site's language.
+ * @description Expressed as a two-letter abbreviation on the globe in the top-left corner of the website,
+ * which can be clicked to change the website's language.
  */
 const LanguageSelect = (props: LanguageSelectProps) => {
     const [isHovering, setIsHovering] = useState(false);
